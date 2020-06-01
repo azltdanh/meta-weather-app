@@ -8,7 +8,7 @@ export const getEndpointUrl = (url) => {
   if (url.match(/^(http|https):\/\//)) {
     return url;
   }
-  return `${baseEndpoint}/${encodeURIComponent(url.replace(/^\/+/, ''))}`; // Using direct url or from base url
+  return `${baseEndpoint}/${url.replace(/^\/+/, '')}`; // Using direct url or from base url
 };
 
 export const getFetchOptions = (method, body, options = {}) =>
