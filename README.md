@@ -13,7 +13,7 @@ $ npm run start                     # build and start development mode
 $ npm run build                     # build a minified production version
 $ npm run lint                      # linting using ESLint
 $ npm run test                      # run test using Jest
-$ npm run test -- --coverage        # run test coverage report
+$ npm run test -- --coverage --watchAll=false       # run test coverage report
 ```
 
 ## Technical & Libraries In-Use
