@@ -1,0 +1,13 @@
+export const SEARCH_LOCATION_REQUEST = 'SEARCH_LOCATION_REQUEST';
+export const SEARCH_LOCATION_RECEIVED = 'SEARCH_LOCATION_RECEIVED';
+export const LOCATION_FORECAST_REQUEST = 'LOCATION_FORECAST_REQUEST';
+export const LOCATION_FORECAST_RECEIVED = 'LOCATION_FORECAST_RECEIVED';
+
+export const searchLocation = (query) => ({
+  type: SEARCH_LOCATION_REQUEST,
+  query
+});
+
+export const getLocationForecast = () => ({
+  type: LOCATION_FORECAST_REQUEST
+});
